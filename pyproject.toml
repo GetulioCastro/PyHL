@@ -8,6 +8,7 @@ license = "BSD-3-Clause"
 [tool.poetry.dependencies]
 python = "^3.8"
 django = "^3.0.6"
+dynaconf = "^2.2.3"
 
 [tool.poetry.dev-dependencies]
 

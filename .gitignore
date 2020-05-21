@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+# Dynaconf
+settings.toml
+
+
 # Distribution / packaging
 .Python
 build/
