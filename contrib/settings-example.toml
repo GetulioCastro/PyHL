@@ -1,7 +1,0 @@
-[default]
-SECRET_KEY = 'MySuperHyperTopSecretKey'
-ALLOWED_HOSTS = [] # Put the allowed hosts into this list
-DEBUG = false
-
-[development]
-DEBUG = true

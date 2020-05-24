@@ -6,10 +6,6 @@ __pycache__/
 # C extensions
 *.so
 
-# Dynaconf
-settings.toml
-
-
 # Distribution / packaging
 .Python
 build/
@@ -131,3 +127,6 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# Ignore dynaconf secret files
+.secrets.*
