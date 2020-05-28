@@ -5,11 +5,11 @@ development:
   - NAME: django.contrib.auth.password_validation.MinimumLengthValidator
   - NAME: django.contrib.auth.password_validation.CommonPasswordValidator
   - NAME: django.contrib.auth.password_validation.NumericPasswordValidator
-  BASE_DIR: /home/riverfount/Documents/projects/PyHL
+  BASE_DIR: /home/{user}/Documents/projects/PyHL
   DATABASES:
     default:
       ENGINE: django.db.backends.sqlite3
-      NAME: /home/riverfount/Documents/projects/PyHL/db.sqlite3
+      NAME: /home/{user}/Documents/projects/PyHL/db.sqlite3
   DEBUG: 'False'
   INSTALLED_APPS:
   - django.contrib.admin
