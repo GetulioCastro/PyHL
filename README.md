@@ -11,6 +11,7 @@ the Poetry installed: `pip install poetry`
 1. Export Django Settings envvar: `export DJANGO_SETTINGS_MODULE=djhl.settings`
 1. Copy contrib/settings_example.yaml to root of project and change its name to settings.py, and change `{user}` to
 your user on the system: `cp contrib/settings_example.yaml settings.yaml`
+1. It needs to change the DATABASES Set Up on settings.yaml, like the PostgreSQL example below
 1. Create a .secrets.toml file with the Django Secret Key. Below we have a sample of this file.
 1. Test your installation: `python mange.py runserver`
 
@@ -18,4 +19,18 @@ your user on the system: `cp contrib/settings_example.yaml settings.yaml`
 ```toml
 [default]
 SECRET_KEY = "t_21su#f56q3u15je6dsi5!jhxhz6#l*cbgr7%efk^$$@e)%zl"
+```
+
+
+#### PostgreSQL Set Up Example
+
+```yaml
+  DATABASES:
+    default:
+      ENGINE: django.db.backends.postgresql_psycopg2
+      NAME: postgres
+      USER: postgres
+      PASSWORD: ''
+      HOST: 127.0.0.1
+      PORT: 5432
 ```
